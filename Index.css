@@ -1,0 +1,43 @@
+/* RTI Portal Home Page */
+
+.navbar{
+    background-color: #e3f2fd; 
+    opacity: 0.9;
+}
+
+.nav-item{
+    color: #192A51;
+}
+
+.nav-link:hover{
+    background-color: #D2E0BF;
+    font-weight: bold;
+    border-radius: 15px 0px;
+}
+
+
+main{
+    height: auto;
+    width: auto;
+    background-image: url("https://www.newsbugz.com/wp-content/uploads/2018/12/Human-Rights-Day-Images-6.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: whitesmoke;
+    opacity: 0.82;
+}
+
+main h1{
+    padding-top: 180px;
+    padding-bottom: 20px;
+    font-size: 7vw;
+    color: ivory;
+}
+
+main p{
+    padding-top: 50px;
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 20px;
+    color: antiquewhite;
+    padding-bottom: 110px;
+}

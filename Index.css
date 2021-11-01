@@ -41,3 +41,27 @@ main p{
     color: antiquewhite;
     padding-bottom: 110px;
 }
+
+.objective h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid grey ;
+    color:  #192A51;
+    margin-bottom: 40px;
+}
+
+.label{
+    background-color: #D4F2D2;
+    border-radius: 25px;
+    color: ivory;
+}
+
+.label:hover{
+    transform: scale(1.1);
+}
+
+.label p{
+    font-size: large;
+    font-family: Verdana;
+}

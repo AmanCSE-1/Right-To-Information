@@ -65,3 +65,37 @@ main p{
     font-size: large;
     font-family: Verdana;
 }
+
+.stats{
+    /* margin-top: 40px; */
+    padding: 60px 0px;
+    background-color: #E6E4CE;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+.stats h2{
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 3px solid grey ;
+    color: #192A51;
+}
+
+/* .stats h1{
+    padding-top: 15px;
+} */
+
+
+/* Color Scheme Classes */
+.s1{
+    color: orange;
+}
+
+.s2{
+    color: #192A51;
+}
+
+.s3{
+    color: darkgreen;
+}

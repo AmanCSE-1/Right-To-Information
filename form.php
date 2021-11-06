@@ -64,7 +64,7 @@ $name = $row['name'];
     <link rel="stylesheet" href="index.css">
 
     <!-- Javascript File -->
-    <script src="assignement2.js" type="text/javascript"></script>
+    <script src="form.js" type="text/javascript"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 

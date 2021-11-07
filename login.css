@@ -1,0 +1,35 @@
+body {
+    overflow-y: hidden;
+    height: auto;
+    width: auto;
+    background-image: url("https://www.newsbugz.com/wp-content/uploads/2018/12/Human-Rights-Day-Images-6.jpg");
+    background-size: 100% 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: lighten;
+}
+
+form {
+    margin-top: 20vh;
+    border-radius: 20px;
+    opacity: 0.88;
+}
+
+form:hover {
+    opacity: 1;
+}
+
+.placeicon {
+    font-family: Arial, FontAwesome;
+}
+
+.footer {
+    color: whitesmoke;
+    background-color: #273043;
+    border-radius: 20px;
+    opacity: 0.88;
+    margin-bottom: 0px;
+}
+
+.s1 {
+    color: orange;
+}

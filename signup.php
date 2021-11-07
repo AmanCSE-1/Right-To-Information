@@ -47,7 +47,7 @@
           $statement->close();
           $conn->close();
 
-          header("Location: Login.php");
+          header("Location: login.php");
         }
       }
   }
@@ -60,9 +60,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
     <title>Sign Up - RTI Portal</title>
     <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wvba.com%2Fimages%2FInfo-I-Logo.png&f=1&nofb=1" type="image/png" width="30" height="25">
 
+    <!-- External CSS File -->
+    <link type="stylesheet" href="signup.css">
+  
     <!-- Javascript File -->
     <script src="SignUp.js" type="text/javascript"></script>
 
@@ -72,43 +76,7 @@
 
     <!-- Font Awesome Icon-->
     <script src="https://kit.fontawesome.com/03801c7b15.js" crossorigin="anonymous"></script>
-
-    <!-- Styling the Web Page -->
-    <style>
-      body{
-        overflow-y : hidden;
-        height: auto;
-        width: auto;
-        background-image: url("https://www.newsbugz.com/wp-content/uploads/2018/12/Human-Rights-Day-Images-6.jpg");
-        background-size: 100% 100%;
-        background-color: rgba(255,255,255,0.1);
-        background-blend-mode: lighten;
-      }
-
-      form{
-        border-radius: 20px;
-        opacity: 0.88;
-      }
-
-      form:hover{
-        opacity: 1;
-      }
-
-      .placeicon{
-          font-family: Arial, FontAwesome;
-      }
-
-      .footer{
-        color: whitesmoke;
-        background-color: #273043;
-        border-radius: 20px;
-        opacity: 0.88;
-      }
-
-      .s1{
-          color: orange;
-      }
-    </style>
+  
 </head>
 
 <body>
@@ -201,7 +169,7 @@
     <div class="col-12 text-center">
       <p class="text-danger fw-bold"> <?php echo $alertMessage?></p>
       <button class="btn btn-primary mb-2" type="submit" name="SubmitButton" onclick="required(CheckPassword())">Submit</button>
-      <p class="text-muted pb-4">Already have an account? <a href="Login.php">Login</a></p>
+      <p class="text-muted pb-4">Already have an account? <a href="login.php">Login</a></p>
     </div>
   </form>
 

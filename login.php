@@ -41,7 +41,7 @@ if(isset($_POST['SubmitButton'])){
     <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wvba.com%2Fimages%2FInfo-I-Logo.png&f=1&nofb=1" type="image/png" width="30" height="25">
 
     <!-- Javascript File -->
-    <script src="SignUp.js" type="text/javascript"></script>
+    <script src="signup.js" type="text/javascript"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -50,44 +50,6 @@ if(isset($_POST['SubmitButton'])){
     <!-- Font Awesome Icon-->
     <script src="https://kit.fontawesome.com/03801c7b15.js" crossorigin="anonymous"></script>
 
-    <!-- Styling the Web Page -->
-    <style>
-      body{
-        overflow-y : hidden;
-        height: auto;
-        width: auto;
-        background-image: url("https://www.newsbugz.com/wp-content/uploads/2018/12/Human-Rights-Day-Images-6.jpg");
-        background-size: 100% 100%;
-        background-color: rgba(255,255,255,0.1);
-        background-blend-mode: lighten;
-      }
-
-      form{
-        margin-top: 20vh;
-        border-radius: 20px;
-        opacity: 0.88;
-      }
-
-      form:hover{
-        opacity: 1;
-      }
-
-      .placeicon{
-          font-family: Arial, FontAwesome;
-      }
-
-      .footer{
-        color: whitesmoke;
-        background-color: #273043;
-        border-radius: 20px;
-        opacity: 0.88;
-        margin-bottom: 0px;
-      }
-
-      .s1{
-          color: orange;
-      }
-    </style>
 </head>
 
 <body>
@@ -120,7 +82,7 @@ if(isset($_POST['SubmitButton'])){
     <p class="text-danger fw-bold"> <?php echo $alertMessage?></p>
       <button class="btn btn-primary mb-2" type="submit" name="SubmitButton" >Submit</button>
       <p class="text-muted pb-4">Forgot Password? <a href="#"> Reset</a><br>
-                            Don't have an account? <a href="SignUp.php"> Sign Up</a></p>
+                            Don't have an account? <a href="signup.php"> Sign Up</a></p>
     </div>
   </form>
 

@@ -37,9 +37,13 @@ if(isset($_POST['SubmitButton'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>LogIn - RTI Portal</title>
     <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.wvba.com%2Fimages%2FInfo-I-Logo.png&f=1&nofb=1" type="image/png" width="30" height="25">
 
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="login.css">
+    
     <!-- Javascript File -->
     <script src="signup.js" type="text/javascript"></script>
 

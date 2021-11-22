@@ -3,14 +3,20 @@
 <?php
   $alertMessage = "";
 
+  // If Submit Button is clicked:
   if(isset($_POST['SubmitButton'])){
+    
+    // Fetching the user-entered values for the following fields 
     $name = $_POST['validationName'];
     $username = $_POST['validationUsername'];
     $password = $_POST['validationPassword'];
     $email = $_POST['validationEmail'];
     $country = $_POST['validationCountry'];
     
+    // Establishing a connection with the MySQL Database
     $conn = new mysqli('localhost', 'root', '', 'project_rti_portal');
+    
+    // If there is any error, print connection failed
     if($conn->connect_error){
       echo "$conn->connect_error";
       die("Connection Failed : ".$conn->connect_error);
@@ -21,11 +27,13 @@
       $query = mysqli_query($conn, "SELECT * FROM users WHERE username='".$username."'");  
       $count = mysqli_num_rows($query); 
       
+      // If username already exists, then raise an alert-message
       if($count!=0)  {  
         $alertMessage = "Username already exists..! Please enter another username";
       }
+      
       else{ 
-        // Password validation
+        // Password validation : Checking for atleast one number, atleast one Capital Letter, small letter and special character
         if(!preg_match("#[0-9]+#", $password)) {
           $alertMessage = "Password must contain atleast one number!";
         }
@@ -39,14 +47,17 @@
           $alertMessage = "Password must contain atleast one special character";
         }
 
-        // Correct Credentials
+        // Correct Credentials : If all the above conditions are satisfied, then add new entry in database
         else{
           $statement = $conn->prepare("Insert into users(name, username, password, email, country) Values(?, ?, ?, ?, ?)");
           $statement->bind_param("sssss", $name, $username, $password, $email, $country);
           $execval = $statement->execute();
+          
+          // Close the connection
           $statement->close();
           $conn->close();
 
+          // Redirect to login page
           header("Location: login.php");
         }
       }
